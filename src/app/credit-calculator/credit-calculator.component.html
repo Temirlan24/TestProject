@@ -1,13 +1,31 @@
-<div class="credit-sum">
-  <span style="color: grey;">Сумма кредита:</span>
-  <div>
-    <app-slider
-      [value] = "amount"
-      [min] = "minAmount"
-      [max] = "maxAmount"
-      [step]="step"
-      (valueChange)="onAmountChange($event)"
-    ></app-slider>
+<div class="credit">
+  <div class="credit-sliders">
+    <div class="credit-sum">
+      <h3 class="credit-title">Сумма кредита:</h3>
+      <output class="outputValue"><span class="inputText">{{amount|currency:'RUB':'symbol-narrow'}}</span></output>
+      <input type="range" [value]="amount" [step]="step" [min]="minAmount" [max]="maxAmount" (input)="onMoneyChange($event)">
+      <app-slider [items]="items"></app-slider>
+    </div>
+    <div class="credit-term">
+        <h3 class="credit-title">Срок кредита:</h3>
+        <output class="outputValue"><span class="inputText">{{newAmountMonth}}</span></output>
+        <input type="range" [value]="amountMonth" [step]="stepMonth" [min]="minMonths" [max]="maxMonths" (input)="onChangeMonth($event)">
+        <app-slider [items]="months"></app-slider>
+      </div>
+    </div >
+  <div class="credit-info">
+    <h2><b>Детальная информация по заявке</b></h2>
+    <h4 class="credit-title">Ежемесячный плтажет от</h4>
+    <span class="month-payment">{{monthPayment | currency:'RUB': 'symbol-narrow'}}</span>
+    <h4 class="credit-title">Ставка от</h4>
+    <span><b>{{interestRate}}%</b></span>
+    <h4 class="credit-title">Срок кредита</h4>
+    <span><b>{{newAmountMonth}}</b></span>
+    <h4 class="credit-title">Сумма кредита</h4>
+    <span><b>{{amount | currency:'RUB': 'symbol-narrow'}}</b></span>
+    <div class="footer-text">
+      <h4 class="credit-title">Этот расчет не является публичной офертой</h4>
+      <mat-icon class="credit-error-icon">error_outline</mat-icon>
+    </div>
   </div>
 </div>
-<div class="credit-term"></div>

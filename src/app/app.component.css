@@ -1,5 +1,9 @@
+
+.title{
+  font-size: 2rem;
+}
 .credit-container{
-  margin-top: 10%;
+  margin-top: 7%;
 }
 .progressBar{
   margin-top: 15px;
@@ -16,16 +20,23 @@
 .body{
   margin-top: 2.5rem;
 }
+.header-text{
+  display: flex;
+}
 
-.myLabe{
+.myLabel{
   margin-left: 5px;
   width: 55px;
   color: rgb(55 100 248);
   background-color: #dddddd5c;
   text-align: center;
 }
+mat-slide-toggle{
+  margin-top: 30px;
+}
 mat-icon{
   padding-left: 5px;
+  color: grey;
 }
 .footer{
   margin-top: 30px;

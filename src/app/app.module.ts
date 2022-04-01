@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { SliderComponent } from './slider/slider.component';
 import {MatSliderModule} from '@angular/material/slider';
 import { CreditCalculatorComponent } from './credit-calculator/credit-calculator.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CreditCalculatorComponent } from './credit-calculator/credit-calculator
     MatProgressBarModule,
     MatSlideToggleModule,
     MatIconModule,
-    MatSliderModule
+    MatSliderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

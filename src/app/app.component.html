@@ -1,7 +1,7 @@
 <div class="credit-container">
   <div class="header">
-    <h1><strong>Заполните онлайн-заявку</strong></h1>
-    <span style="display: flex;">Мы снизили процентную ставку <div class="myLabe">{{percent}}</div></span>
+    <h1 class="title">Заполните онлайн-заявку</h1>
+    <span class="header-text">Мы снизили процентную ставку <div class="myLabel">{{percent}}</div></span>
     <div class="progressBar">
       <div class="progressBar-text">
         <h2>Шаг 1</h2>
@@ -13,11 +13,11 @@
   <div class="body">
     <h2><strong>Выберите условия кредита</strong></h2>
     <app-credit-calculator></app-credit-calculator>
+    <mat-slide-toggle color="primary"><span>Я получил запрплату на карту ВТБ</span></mat-slide-toggle>
   </div>
-  <mat-slide-toggle color="primary">Я получил запрплату на карту ВТБ</mat-slide-toggle>
 
   <div class="footer">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <mat-icon>error</mat-icon>
     <div class="footer-text">
       <h2>Вы уже клиент ВТБ</h2>
       <span>Можно оформить кредит в ВТБ Онлайн</span>
