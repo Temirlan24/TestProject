@@ -1,0 +1,13 @@
+<div class="credit-sum">
+  <span style="color: grey;">Сумма кредита:</span>
+  <div>
+    <app-slider
+      [value] = "amount"
+      [min] = "minAmount"
+      [max] = "maxAmount"
+      [step]="step"
+      (valueChange)="onAmountChange($event)"
+    ></app-slider>
+  </div>
+</div>
+<div class="credit-term"></div>

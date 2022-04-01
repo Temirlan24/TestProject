@@ -1,0 +1,43 @@
+.credit-container{
+  margin-top: 10%;
+}
+.progressBar{
+  margin-top: 15px;
+}
+.progressBar-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.firstProgressBar{
+  border-radius: 15px;
+  height: 7px;
+}
+.body{
+  margin-top: 2.5rem;
+}
+
+.myLabe{
+  margin-left: 5px;
+  width: 55px;
+  color: rgb(55 100 248);
+  background-color: #dddddd5c;
+  text-align: center;
+}
+mat-icon{
+  padding-left: 5px;
+}
+.footer{
+  margin-top: 30px;
+  width: 700px;
+  height: 120px;
+  border: 2px rgb(55 100 248) solid;
+  background-color: #dddddd5c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.footer-text{
+  width: 90%;
+}

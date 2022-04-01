@@ -1,0 +1,29 @@
+<div class="credit-calculator-slider">
+
+  <div class="container">
+    <div class="slider-container">
+      <mat-slider
+        class="slider"
+        [step]="step"
+        [min]="min"
+        [max]="max"
+        [value]="value"
+        (input)="onValueChange($event)"
+      ></mat-slider>
+
+      <div class="labels">
+        <span class="label min">
+          <ng-container *ngTemplateOutlet="minLabelTemplate; context: { $implicit: min }"></ng-container>
+        </span>
+
+        <span class="label max">
+          <ng-container *ngTemplateOutlet="minLabelTemplate; context: { $implicit: max }"></ng-container>
+        </span>
+      </div>
+    </div>
+
+    <span class="value">
+      <ng-container *ngTemplateOutlet="valueLabelTemplate; context: { $implicit: value }"></ng-container>
+    </span>
+  </div>
+</div>
