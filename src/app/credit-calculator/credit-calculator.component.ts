@@ -65,8 +65,7 @@ export class CreditCalculatorComponent implements OnInit {
     },1000);
   }
   calculateCredit(){
-    const p = (this.interestRate/100)/12;
-    this.monthPayment =Math.ceil(this.amount*(p+(p/((1+p)^this.amountMonth-1))));
-    console.log("payment", this.monthPayment);
+    const p = this.interestRate/12;
+    this.monthPayment = Math.ceil(this.amount*(p*(1+p)^this.amountMonth)/((1+p)^this.amountMonth -1));
   }
 }
